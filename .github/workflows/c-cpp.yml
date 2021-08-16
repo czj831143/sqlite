@@ -19,8 +19,6 @@ jobs:
       run: ./configure --prefix=/home/runner/work/sqlite/sqlite/sqlite2 --host=arm
     - name: make
       run: make
-    - name: make test
-      run: make test
     - name: zip
       run: zip sq.zip ./*
     - name: Upload artifact
