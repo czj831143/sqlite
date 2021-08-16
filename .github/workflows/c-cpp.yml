@@ -16,7 +16,7 @@ jobs:
     - name: mkdir
       run: mkdir sqlite2
     - name: configure 
-      run: ./configure --prefix=/home/runner/work/sqlite/sqlite/sqlite2 --host=aarch64-linux
+      run: ./configure --prefix=/home/runner/work/sqlite/sqlite/sqlite2 --host=arm
     - name: make
       run: make
     - name: zip
