@@ -15,8 +15,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: mkdir
       run: mkdir sqlite3
-    - name: readlink
-      run: readlink sqlite3
+    - name: pwd
+      run: pwd
     - name: configure
       run: ./configure --prefix=sqlite3 --build=aarch64-linux
     - name: make
