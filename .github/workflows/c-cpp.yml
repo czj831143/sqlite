@@ -14,8 +14,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: mkdir
-      run: mkdir -p /home/sqlite3
+      run: pwd
     - name: configure
-      run: ./configure --prefix=/home/sqlite3/
+      run: ./configure
     - name: make
       run: make
