@@ -20,7 +20,7 @@ jobs:
     - name: wget2
       run: wget -O config.sub 'http://git.savannah.gnu.org/gitweb/?p=config.git;a=blob_plain;f=config.sub;hb=HEAD'
     - name: configure 
-      run: ./configure --prefix=/home/runner/work/sqlite/sqlite/sqlite2 --host=aarch64-linux
+      run: ./configure --prefix=/home/runner/work/sqlite/sqlite/sqlite2 --host=aarch64
     - name: make
       run: make
     - name: zip
