@@ -14,9 +14,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: mkdir
-      run: mkdir sqlite3
+      run: mkdir sqlite2
     - name: configure 
-      run: ./configure --prefix=/home/runner/work/sqlite/sqlite/sqlite3 --build=aarch64-linux
+      run: ./configure --prefix=/home/runner/work/sqlite/sqlite/sqlite2 --build=aarch64-linux
     - name: make
       run: make
     - name: zip
