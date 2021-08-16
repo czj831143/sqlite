@@ -1,0 +1,21 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ branch-3.7.15 ]
+  pull_request:
+    branches: [ branch-3.7.15 ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: mkdir
+      run: mkdir -p /home/sqlite3
+    - name: configure
+      run: ./configure --prefix=/home/sqlite3/
+    - name: make
+      run: make
