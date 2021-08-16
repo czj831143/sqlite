@@ -16,7 +16,7 @@ jobs:
     - name: mkdir
       run: mkdir sqlite3
     - name: configure
-      run: ./configure --prefix=./sqlite3/ --build=aarch64-linux
+      run: ./configure --prefix=sqlite3 --build=aarch64-linux
     - name: make
       run: make
     - name: zip
