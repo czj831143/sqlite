@@ -13,7 +13,18 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: mkdir
+      run: mkdir sqlite3
     - name: configure
-      run: ./configure
+      run: ./configure --prefix=./sqlite3/ --build=aarch64-linux
     - name: make
       run: make
+    - name: zip
+      run: zip sq.zip ./*
+    - name: Upload artifact
+      uses: actions/upload-artifact@master
+      with:
+       name: sqlite3
+       path: ./sq.zip
+
+ 
